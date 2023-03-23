@@ -21,11 +21,11 @@ export const countSlice = createSlice({
     },
 
     incrementRnd(state,action) {
-      state.count (Math.ceil(Math.random() * 100))
+      state.count ((Math.random() * 100).toFixed(0))
     },
 
     decrementRnd(state,action) {
-      state.count (Math.ceil(Math.random() / 100))
+      state.count ((Math.random() / 100).toFixed(0))
     }
   },
 });
